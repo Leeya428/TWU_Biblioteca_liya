@@ -1,25 +1,15 @@
 package com.twu.biblioteca;
 
 
-public class Book {
-    private String bookName;
+public class Book extends LibraryData {
+
     private String bookAuthor;
     private String bookPublished;
 
-
-
     public Book(String bookName, String bookAuthor,String bookPublished ){
-        this.bookName = bookName;
+        super(bookName);
         this.bookAuthor = bookAuthor;
         this.bookPublished = bookPublished;
-    }
-
-    public String getBookName() {
-        return bookName;
-    }
-
-    public void setBookName(String bookName) {
-        this.bookName = bookName;
     }
 
     public String getBookAuthor() {
@@ -37,7 +27,6 @@ public class Book {
     public void setBookPublished(String bookPublished) {
         this.bookPublished = bookPublished;
     }
-
 
 
 
